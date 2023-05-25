@@ -35,7 +35,7 @@ console.log('GET from the database');
   
   const result = await request;
   console.log('result.value', result);
-  return result;
+  return result?.value;
 };
 
 initdb();
